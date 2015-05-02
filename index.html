@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title> Molten E-commerce tutorial</title>
+	<script src="scripts/moltin.min.js"></script>
+</head>
+	<body>
+			<script>
+				var moltin = new Moltin({publicId: 'rkD5buoRH0sqNsEOX60rZyy4iEukRh1qhOnKAist'});
+				moltin.Authenticate(function() {
+				  
+					moltin.Category.List(null, function(categories){
+						console.log(categories);
+					})
+				});
+
+			</script>
+			
+	</body>
+</html>
